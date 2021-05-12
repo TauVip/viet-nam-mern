@@ -13,6 +13,8 @@ app.use(fileUpload({ useTempFiles: true }))
 
 app.use('/user', require('./routes/userRouter'))
 app.use('/api', require('./routes/categoryRouter'))
+app.use('/api', require('./routes/upload'))
+app.use('/api', require('./routes/productRouter'))
 
 const URI = process.env.MONGODB_URL
 mongoose.connect(
@@ -32,4 +34,4 @@ mongoose.connect(
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () => console.log('Server is running on port', PORT))
 
-// MERN Stack | Build a Ecommerce Website - Full | 1:39:16
+// MERN Stack | Build a Ecommerce Website - Full | 2:37:24
