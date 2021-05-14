@@ -35,4 +35,4 @@ mongoose.connect(
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () => console.log('Server is running on port', PORT))
 
-// MERN Stack | Build a Ecommerce Website - Full | 5:59:38
+// MERN Stack | Build a Ecommerce Website - Full | 6:23:06
