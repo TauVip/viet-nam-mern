@@ -15,6 +15,7 @@ app.use('/user', require('./routes/userRouter'))
 app.use('/api', require('./routes/categoryRouter'))
 app.use('/api', require('./routes/upload'))
 app.use('/api', require('./routes/productRouter'))
+app.use('/api', require('./routes/paymentRouter'))
 
 const URI = process.env.MONGODB_URL
 mongoose.connect(
@@ -34,4 +35,4 @@ mongoose.connect(
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () => console.log('Server is running on port', PORT))
 
-// MERN Stack | Build a Ecommerce Website - Full | 4:40:33
+// MERN Stack | Build a Ecommerce Website - Full | 5:59:38
