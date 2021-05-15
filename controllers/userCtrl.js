@@ -125,9 +125,9 @@ const userCtrl = {
 }
 
 const createAccessToken = user =>
-  jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '1d' })
+  jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '17s' })
 
 const createRefreshToken = user =>
-  jwt.sign(user, process.env.REFRESH_TOKEN_SECRET, { expiresIn: '7d' })
+  jwt.sign(user, process.env.REFRESH_TOKEN_SECRET, { expiresIn: '1d' })
 
 module.exports = userCtrl
